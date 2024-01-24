@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "apis-in-ml"
+version = "0.1.0"
+description = ""
+authors = ["Faculty <info@faculty.ai>"]
+readme = "README.md"
+packages = [{include = "apis_in_ml", from="src"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+
+[tool.poetry.group.testing.dependencies]
+pytest = "^7.4.4"
+moto = "^4.2.13"
+pytest-cov = "^4.1.0"
+
+
+[tool.poetry.group.linting.dependencies]
+black = "^23.12.1"
+isort = "^5.13.2"
+flake8 = "^7.0.0"
+
+
+[build-system]
+requires = ["poetry-core", "pybind11"]
+build-backend = "poetry.core.masonry.api"
