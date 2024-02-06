@@ -1,0 +1,7 @@
+[flake8]
+ignore = E203 W503 W291 W293
+max-line-length = 88
+exclude =
+    .tox
+    dist
+    .eggs

@@ -8,6 +8,14 @@ packages = [{include = "apis_in_ml", from="src"}]
 
 [tool.poetry.dependencies]
 python = "^3.9"
+sqlalchemy = "^2.0.25"
+sqlmodel = "^0.0.14"
+loguru = "^0.7.2"
+httpx = "^0.26.0"
+fastapi = "^0.109.0"
+uvicorn = "^0.27.0.post1"
+fastapi-auth-middleware = "^1.0.2"
+transformers = "^4.37.2"
 
 
 [tool.poetry.group.testing.dependencies]
