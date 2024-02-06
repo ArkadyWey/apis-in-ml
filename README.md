@@ -9,7 +9,6 @@ git clone https://gitlab.com/facultyai/fellowship/mle-fellowship-teaching-resour
 ```
 
 2. Understand the structure of the repository
-# TODO: add details of files to look at here.
 
 3. Create the virtual environment, install the dependencies and activate it.
 ```
@@ -36,6 +35,7 @@ uvicorn main:app --reload
 user_id=1
 user_id=2
 ```
+Send a request using the Swagger docs (`localhost:8000/docs`), `curl` and Postman.
 
 8. Add an endpoint to the API to add a user to the database.
 
