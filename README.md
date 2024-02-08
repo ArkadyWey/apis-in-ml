@@ -48,6 +48,7 @@ poerty add fastapi_auth_middleware
 
 ### 11. Add Authenication middleware to restrict only admins from adding participants and only super users from deleting participants.
 Use [this](!https://fastapi-auth-middleware.code-specialist.com/) as a guideline.
+Middleware: Tool for processing requests and responses before they reach endpoint logic or afterwards.
 
 ### 12. Add two new endpoints to the API to interact with the TextClassification model. 
 a. The first endpoint should accept a classication input (see `ClassificationInput` in `src/apis_in_ml/models.py`), add a background task to run the text classification using `TextClassifier` in `src/apis_in_ml/classifier.py` and return a response with a message including the `run_id`. 
