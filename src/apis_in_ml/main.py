@@ -4,7 +4,8 @@ import uuid
 from typing import List, Tuple
 
 from fastapi import BackgroundTasks, Depends, FastAPI, HTTPException
-from fastapi_auth_middleware import AuthMiddleware, FastAPIUser
+
+# from fastapi_auth_middleware import AuthMiddleware, FastAPIUser
 from sqlalchemy.orm.session import Session
 from sqlmodel import SQLModel
 from starlette.authentication import BaseUser, requires
