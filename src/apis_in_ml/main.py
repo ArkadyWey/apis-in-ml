@@ -62,3 +62,14 @@ def remove_participant(participant_id: int, db: Session = Depends(get_db)):
         raise HTTPException(status_code=404, detail="Participant not found")
 
     return {"message": f"Deleted participant with ID {deleted_participant_id}"}
+
+
+@app.post("/participant/")
+def create_participant(participant: Participant, db: Session = Depends(get_db)):
+    """Add participant to the database."""
+
+    added_participant = add_participant(db=db, participant=participant)
+    return {"message": f"Added participant with ID {added_participant}"}
+
+
+
