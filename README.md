@@ -47,7 +47,7 @@ poerty add fastapi_auth_middleware
 ```
 
 ### 11. Add Authenication middleware to restrict only admins from adding participants and only super users from deleting participants.
-Use [this](!https://fastapi-auth-middleware.code-specialist.com/) as a guideline.
+Use [this](https://fastapi-auth-middleware.code-specialist.com/) as a guideline.
 Middleware: Tool for processing requests and responses before they reach endpoint logic or afterwards.
 
 ### 12. Add two new endpoints to the API to interact with the TextClassification model. 
